@@ -1,10 +1,10 @@
 import React from "react";
-import { Card, Badge, Button } from 'react-bootstrap';
+import { Card, Button } from 'react-bootstrap';
 import { LoremIpsum, fullname, Avatar } from 'react-lorem-ipsum';
 
 export function EmployeeCard({ data }) {
     return (
-        <Card className="h-100 shadow-sm bg-white rounded" key={data.id}>
+        <Card className="h-100 border-white" key={data.id}>
             <Avatar gender={data.gender} className="align-self-center avatar rounded-circle my-4" width="200" height="200" alt="Avatar" />
             <Card.Body className="d-flex flex-column text-center">
                 <Card.Title className="mb-0 font-weight-bold"><h4>{fullname(data.gender)}</h4></Card.Title>
