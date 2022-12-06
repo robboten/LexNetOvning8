@@ -10,7 +10,6 @@ function Footer() {
                     <Col><p><small>robboten ~ © 2022</small></p></Col>
                     <Col className="col fs-6 fst-italic"><LoremIpsum p={1} avgSentencesPerParagraph={3} /></Col>
                 </Row>
-
             </footer>
         </Container>
     )

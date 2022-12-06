@@ -2,23 +2,12 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Button } from 'react-bootstrap';
 import { LoremIpsum } from 'react-lorem-ipsum';
-
+import { PageHeadRows } from '../components/PageHeadRows';
 
 function Events() {
     return (
         <Container>
-            <Row>
-                <header className="p-3 pb-md-4 mx-auto text-center">
-                    <h1 className="display-4 fw-normal">Kaffeparty</h1>
-                </header>
-            </Row>
-            <Row className="justify-content-md-center  mx-auto text-center">
-                <Col xs lg="8">
-                    <div className="fs-5 mb-4 text-muted">
-                        <LoremIpsum p={1} avgSentencesPerParagraph={5} />
-                    </div>
-                </Col>
-            </Row>
+            <PageHeadRows title="Kaffeparty" />
             <Row className="mb-2">
                 <Col className="text-bg-secondary rounded-start">
                     <Row>
@@ -26,12 +15,12 @@ function Events() {
                     </Row>
                     <Row className="m-4 border-top pt-4">
                         <Col>
-                            <img src="https://via.placeholder.com/250x350" className='float-start'></img>
+                            <img src="https://via.placeholder.com/250x350" alt="placeholder" className='float-start'></img>
                         </Col>
                         <Col className="col-sm-6">
                             <LoremIpsum p={1} />
-                            <div className='clearfix'>
-                                <Button className="btn-secondary btn-outline-light float-right">Find out more</Button>
+                            <div className='clearfix pb-auto'>
+                                <Button className="btn-secondary btn-outline-light  float-end">Find out more</Button>
                             </div>
                         </Col>
                     </Row>
@@ -41,14 +30,14 @@ function Events() {
                         <h4 className="text-center pt-4">Privatpersoner</h4>
                     </Row>
                     <Row className="m-4 border-top border-dark pt-4">
+                        <Col>
+                            <img src="https://via.placeholder.com/250x350" alt="placeholder" className='float-start'></img>
+                        </Col>
                         <Col className="col-sm-6">
                             <LoremIpsum p={1} />
                             <div className='clearfix'>
-                                <Button className="btn btn-outline-dark btn-light">Find out more</Button>
+                                <Button className="btn btn-outline-dark btn-light float-end">Find out more</Button>
                             </div>
-                        </Col>
-                        <Col>
-                            <img src="https://via.placeholder.com/250x350" className='float-end'></img>
                         </Col>
                     </Row>
                 </Col>
