@@ -1,4 +1,3 @@
-import React from "react";
 import { Card, Badge, Button } from 'react-bootstrap';
 
 export function ProductCard({ data }) {

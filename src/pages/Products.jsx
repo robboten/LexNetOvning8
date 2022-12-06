@@ -1,7 +1,6 @@
-import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import { ProductCard } from '../components/ProductCard';
 import products from '../data/products';
+import { ProductCard } from '../components/ProductCard';
 import { PageHeadRows } from '../components/PageHeadRows';
 
 function Products() {

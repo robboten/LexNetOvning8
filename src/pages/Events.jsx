@@ -1,6 +1,4 @@
-import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
-import { Button } from 'react-bootstrap';
+import { Container, Row, Col,Button  } from 'react-bootstrap';
 import { LoremIpsum } from 'react-lorem-ipsum';
 import { PageHeadRows } from '../components/PageHeadRows';
 

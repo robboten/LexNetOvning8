@@ -1,4 +1,3 @@
-import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import employees from '../data/employees';
 import { EmployeeCard } from '../components/EmployeeCard';
