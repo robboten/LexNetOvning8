@@ -1,17 +1,19 @@
-
-
-$dark-brown: #35211E;
-$sisal-brown: #D9CCBE;
-$quincy-brown: #643C31;
-$muted-brown: #5e504c;
-$light-brown:#ddd9d7;
-$random: #E9EBEB;
-$sandal-brown: #AB8B6F;
-
 $body-color: #35211E;
 $text-muted: #706966;
 
-$s: #5c5656;
+
+$darkgrey-brown: #5c5656;
+$quincy-brown: #643C31;
+$light-grey: #E9EBEB;
+$dark-brown: #35211E;
+
+
+$sisal-brown: #D9CCBE;
+$muted-brown: #5e504c;
+$light-brown:#ddd9d7;
+$sandal-brown: #AB8B6F;
+
+
 // 221E22
 // 79736A
 // 868286
@@ -26,14 +28,13 @@ $s: #5c5656;
 
 $theme-colors: (
   "primary":    $quincy-brown,
-  "secondary":  $s,
-  "light":      $random,
-  "muted": $sisal-brown,
+  "secondary":  $darkgrey-brown,
+  "light":      $light-grey,
   "dark":   $dark-brown,
 );
 
 
-@import "../node_modules/bootstrap/scss/bootstrap";
+@import "../../node_modules/bootstrap/scss/bootstrap";
 
 
 
