@@ -8,7 +8,7 @@ const rData = [
     { title: "Kaffeparty, så fungerar det!", align: true, span: 8, src: "https://live.staticflickr.com/65535/51196341817_db191250d1_b.jpg" }
 ]
 const simpleRows = rData.map((data) => {
-    return <SimpleRow title={data.title} align={data.align} span={data.span} src={data.src} />
+    return <SimpleRow key={data.title} title={data.title} align={data.align} span={data.span} src={data.src} />
 });
 
 function Home() {

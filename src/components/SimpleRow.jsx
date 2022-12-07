@@ -1,7 +1,21 @@
 import { LoremIpsum } from 'react-lorem-ipsum';
 import { Container, Row, Col } from 'react-bootstrap';
 
+function orders({align}){
+    if(align)
+    {
+        return 1;
+    }
+}
+
 export function SimpleRow({ title, src, align, span }) {
+    let firstCol=2;
+    let secondCol=1;
+    if(align)
+    {
+        firstCol = 1;
+        secondCol = 2;
+    }
     return (
         <Container>
             <Row>
@@ -11,8 +25,8 @@ export function SimpleRow({ title, src, align, span }) {
                 </Col>
             </Row>
             <Row className="fs-6 py-4">
-                {align ? <Col><img className="img-thumbnail img-fluid" alt="" src={src} /></Col> : <Col md={span} className="fs-6"><LoremIpsum p={2} /></Col>}
-                {!align ? <Col><img className="img-thumbnail img-fluid" alt="" src={src} /></Col> : <Col md={span} className="fs-6"><LoremIpsum p={2} /></Col>}
+                <Col className={"order-"+firstCol}><img className="img-thumbnail img-fluid" alt="" src={src} /></Col>
+                <Col md={span} className={"order-"+secondCol}><LoremIpsum p={2} /></Col>
             </Row>
         </Container>
     )
