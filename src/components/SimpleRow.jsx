@@ -1,13 +1,6 @@
 import { LoremIpsum } from 'react-lorem-ipsum';
 import { Container, Row, Col } from 'react-bootstrap';
 
-function orders({align}){
-    if(align)
-    {
-        return 1;
-    }
-}
-
 export function SimpleRow({ title, src, align, span }) {
     let firstCol=2;
     let secondCol=1;
